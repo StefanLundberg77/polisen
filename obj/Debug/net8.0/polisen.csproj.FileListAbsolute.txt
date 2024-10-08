@@ -1,0 +1,14 @@
+C:\Users\metal\Skola\polisen\bin\Debug\net8.0\polisen.exe
+C:\Users\metal\Skola\polisen\bin\Debug\net8.0\polisen.deps.json
+C:\Users\metal\Skola\polisen\bin\Debug\net8.0\polisen.runtimeconfig.json
+C:\Users\metal\Skola\polisen\bin\Debug\net8.0\polisen.dll
+C:\Users\metal\Skola\polisen\bin\Debug\net8.0\polisen.pdb
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\polisen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\polisen.AssemblyInfoInputs.cache
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\polisen.AssemblyInfo.cs
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\polisen.csproj.CoreCompileInputs.cache
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\polisen.dll
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\refint\polisen.dll
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\polisen.pdb
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\polisen.genruntimeconfig.cache
+C:\Users\metal\Skola\polisen\obj\Debug\net8.0\ref\polisen.dll
