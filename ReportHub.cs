@@ -2,7 +2,7 @@ public class ReportHub
 {   
     public string Type { get; set; }
     public string Location { get; set; }
-    public DateTime Time { get; set; } // fixa datetime
+    public DateTime Time { get; set; }
     public string DispatchOfficer { get; set; }
     public string Station { get; set; }
     public int DispatchNr { get; set; } //en egenskap för att framöver fixa ngn funktion för rapportnrgenerering?
@@ -10,6 +10,7 @@ public class ReportHub
     public string Description { get; set; }
     public bool ReportStatus { get; set; }
     
+    // kan man göra på något annat sätt än olika konstruktorer?
     public ReportHub(string type, string location, DateTime time, string dispatchOfficer, int dispatchNr, bool reportStatus)//utryckningskonstruktor
     {
         Type = type;
@@ -19,7 +20,7 @@ public class ReportHub
         DispatchNr = dispatchNr;//en egenskap för att framöver fixa ngn funktion för rapportnrgenerering?
         ReportStatus = reportStatus;
     }
-            // Ska innehålla RAPPORTNR DATUM POLISSTATION  BESKRIVNING
+    // Ska innehålla RAPPORTNR DATUM POLISSTATION  BESKRIVNING
     public ReportHub(int reportNr, string description, DateTime time, string station)//rapportkonstruktor
     {
         ReportNr = reportNr;
@@ -37,7 +38,7 @@ public class Dispatch
     {
         dispatches = new List<ReportHub>();
     }
-    //Ska den va static?    
+    
     public void AddDispatch(string type, string location, DateTime time, string dispatchofficer, int dispatchNr, bool reportStatus)
     {
         ReportHub newDisp = new ReportHub(type, location, time, dispatchofficer, dispatchNr, reportStatus); // Skapa objekt

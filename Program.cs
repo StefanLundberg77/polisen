@@ -76,7 +76,7 @@ class Program
             Console.WriteLine("4. Sammanställningar.");
             Console.WriteLine("5. Avsluta.");
             Console.Write("Ange val (1-5): ");
-            string choice = Console.ReadLine();
+            string? choice = Console.ReadLine();
             
             if (choice == "1")
             {   
@@ -91,7 +91,7 @@ class Program
                     Console.WriteLine("2. Se utryckningsloggen.");
                     Console.WriteLine("3. Tillbaks till huvudmeny.");
                     Console.WriteLine("Ange val:");
-                    string input = Console.ReadLine();
+                    string? input = Console.ReadLine();
 
                     switch(input)
                     {
@@ -101,16 +101,16 @@ class Program
                             Console.WriteLine();
 
                             Console.WriteLine("Ange brottstyp:");
-                            string type = Console.ReadLine();
+                            string? type = Console.ReadLine();
                                         
                             Console.WriteLine("Ange plats:");
-                            string location = Console.ReadLine();
+                            string? location = Console.ReadLine();
    
                             Console.WriteLine("Ange datum (åååå/mm/dd):");
-                            string date = Console.ReadLine();
+                            string? date = Console.ReadLine();
 
                             Console.WriteLine("Ange klockslag (hh:mm):");
-                            string hour = Console.ReadLine();
+                            string? hour = Console.ReadLine();
 
                             while (!DateTime.TryParse(date + " " + hour, out time))
                             {
@@ -122,20 +122,19 @@ class Program
                                 hour = Console.ReadLine();
                             }
 
-                            //string dispatchofficer = "";
-                            /*Console.WriteLine("Tillgängliga poliser");
+                            string? dispatchofficer = "";
+                            Console.WriteLine("Tillgängliga poliser");
                             newOfficer.PrintRoster();
                             Console.WriteLine("Ange tjänstenummer för att lägga till");
-                            string badgeInput = Console.ReadLine();
+                            string? badgeInput = Console.ReadLine();
                             if (int.TryParse(badgeInput, out badgeNr))
                             {   
                                 
-                                //polis som matchar tjänstenummer
+                                // söker i lista polis som matchar tjänstenummer
                                 Officer officerToAdd = newOfficer.roster.Find(Officer => Officer.BadgeNr == badgeNr);
                                 
                                 Console.WriteLine($"Vill du lägga till {officerToAdd.FirstName}, {officerToAdd.LastName} J/N?");// lägga till ytterliggare polis??
                                 
-
                                 if (input == "J")
                                 {
                                     dispatchofficer = $"{officerToAdd.FirstName} {officerToAdd.LastName}";
@@ -154,7 +153,7 @@ class Program
                             {
                                 Console.WriteLine("Ogiltigt tjänstenummer. Försök igen.");
                             }
-                            */
+                            
                             // Skapa en lista för att hålla flera poliser för dispatch
                             List<Officer> dispatchOfficers = new List<Officer>();
                             bool continueAdding = true;
@@ -165,7 +164,7 @@ class Program
                                 newOfficer.PrintRoster(); // Visar alla poliser i roster
 
                                 Console.WriteLine("Ange tjänstenummer för att lägga till en polis:");
-                                string badgeInput = Console.ReadLine();
+                                badgeInput = Console.ReadLine();
 
                                 if (int.TryParse(badgeInput, out badgeNr))
                                 {
@@ -225,6 +224,7 @@ class Program
                                 Console.WriteLine($"{officer.FirstName} {officer.LastName}, Tjänstenummer: {officer.BadgeNr}");
                             }
                             Console.WriteLine();
+                            
                             // Skapa dispatch och skicka med all data
                             dispatchNr++;
                             bool ReportStatus = false; 

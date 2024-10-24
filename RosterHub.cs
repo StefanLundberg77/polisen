@@ -10,8 +10,8 @@ public class Roster
     }
     public void AddToRoster(string firstName, string lastName, int badgeNr)
     {    
-        Officer newItem = new Officer(firstName, lastName, badgeNr); // Skapa objekt
-        roster.Add(newItem); // Lägg till objektet i lista;
+        Officer newItem = new Officer(firstName, lastName, badgeNr);
+        roster.Add(newItem); 
     }
     public void PrintRoster()
     {

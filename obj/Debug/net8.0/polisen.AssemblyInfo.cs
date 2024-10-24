@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("polisen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1af3ec6eb56282e178b22a8b8aeb6485531e4288")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7f8be5ca3c186dfa6d70e350e447f2566a2626c")]
 [assembly: System.Reflection.AssemblyProductAttribute("polisen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("polisen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
